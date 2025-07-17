@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Access | RiwiTalk 2025</title>
+    <link rel="stylesheet" href="/app/style/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Main login container -->
+    <div class="login-wrapper">
+        <div class="login-container">
+            <!-- Header section with logo and titles -->
+            <div class="login-header">
+                <h1>RiwiTalk 2025</h1>
+                <h2>Secure Access</h2>
+                <p>Enter your credentials to continue</p>
+            </div>
+            
+            <!-- Login form -->
+            <form class="login-form" id="loginForm">
+                <!-- Username input field -->
+                <div class="form-group">
+                    <label type="username">Username</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i> <!-- User icon -->
+                        <input type="text" id="username" placeholder="your user" required>
+                    </div>
+                </div>
+                
+                <!-- Password input field -->
+                <div class="form-group">
+                    <label type="password">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i> <!-- Lock icon -->
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                </div>
+                <!-- Submit button -->
+                <button type="submit" class="login-button">
+                    <span class="button-text">Enter</span>
+                    <i class="fas fa-arrow-right"></i> <!-- Arrow icon -->
+                </button>
+                
+                <!-- Error message container (hidden by default) -->
+                <div id="error-message" class="error-message" style="display: none;"></div>
+                
+                <!-- Footer with register link and copyright -->
+                <div class="login-footer">
+                    <p>Don't have an account? <a href="/app/views/register.html" data-link class="register-link">Register here</a></p>
+                    <p class="copyright">&copy; RiwiTalk 2025. All rights reserved.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

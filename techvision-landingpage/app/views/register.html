@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure registration | RiwiTalk 2025</title>
+    <link rel="stylesheet" href="/app/style/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-container">
+            <!-- Header with registration title -->
+            <div class="login-header">
+                <div class="logo-container">
+                    <h1>RiwiTalk 2025</h1>
+                <h2>Create an Account</h2>
+                <p>Complete the form to register</p>
+            </div>
+            
+            <!-- Registration form -->
+            <form class="login-form" action="#" method="post">
+                <!-- Full name field -->
+                <div class="form-group">
+                    <label type="name">Full Name</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="name" placeholder="Your full name" required>
+                    </div>
+                </div>
+                
+                <!-- Email field -->
+                <div class="form-group">
+                    <label type="email">E-mail address</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" placeholder="example@correo.com" required>
+                    </div>
+                </div>
+                
+                <!-- Password field -->
+                <div class="form-group">
+                    <label type="password">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                </div>
+                
+                <!-- Terms and conditions checkbox -->
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" required> I accept the <a href="#">terms and conditions</a>
+                    </label>
+                </div>
+                
+                <!-- Submit button -->
+                <button type="submit" class="login-button">
+                    <span class="button-text">Register</span>
+                    <i class="fas fa-user-plus"></i> <!-- User plus icon -->
+                </button>
+                
+                <!-- Footer with login link -->
+                <div class="login-footer">
+                    <p>Already have an account? <a href="/app/views/login.html" data-link class="register-link">Login</a></p>
+                    <p class="copyright">&copy; RiwiTalk 2025. All rights reserved.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
